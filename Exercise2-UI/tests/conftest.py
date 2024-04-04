@@ -16,6 +16,7 @@ def driver():
 
     service = Service(executable_path=ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=options)
+    driver.set_window_size('1200', '1000')
 
     print('finish loading driver.')
     driver.get('https://www.debugbear.com/test/website-speed')

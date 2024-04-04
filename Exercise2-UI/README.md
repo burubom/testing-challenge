@@ -3,6 +3,7 @@
 ### Objective and scope
 This test suite is to validate the functionalities of Speed test site https://www.debugbear.com/test/website-speed.
 The functionalities specific to the page are covered. General functionalities such as 'Log in' are not included.
+The test will be carried out using Chrome.
 
 ### Test approach
 The test type to be carried out is behavior testing. Test cases will be created employing methods such as equivalence partitioning and exploratory testing.
