@@ -1,0 +1,82 @@
+[
+  {
+    "book_id": "1",
+    "title": "Mystery of the Emerald Jungle",
+    "author": "Arthur Morrison",
+    "published_date": "2005-08-27",
+    "isbn": "7931986574812",
+    "price": "65.12"
+  },
+  {
+    "book_id": "2",
+    "title": "Sunset Serenade",
+    "author": "Eleanor Davis",
+    "published_date": "1987-03-12",
+    "isbn": "3149820567394",
+    "price": "43.75"
+  },
+  {
+    "book_id": "3",
+    "title": "Secrets of the Golden Sands",
+    "author": "Benjamin Thompson",
+    "published_date": "2010-11-05",
+    "isbn": "8226740935182",
+    "price": "27.48"
+  },
+  {
+    "book_id": "4",
+    "title": "Echoes of the Forgotten",
+    "author": "Isabella Wilson",
+    "published_date": "1999-06-22",
+    "isbn": "9402573165824",
+    "price": "51.93"
+  },
+  {
+    "book_id": "5",
+    "title": "Whispers in the Wind",
+    "author": "Vincent Fletcher",
+    "published_date": "1976-09-18",
+    "isbn": "8014396257846",
+    "price": "76.09"
+  },
+  {
+    "book_id": "6",
+    "title": "Chronicles of the Starlight",
+    "author": "Sophia Roberts",
+    "published_date": "1985-12-30",
+    "isbn": "7070481523063",
+    "price": "98.25"
+  },
+  {
+    "book_id": "7",
+    "title": "Journey to the Moonstone Palace",
+    "author": "Daniel Evans",
+    "published_date": "2003-10-07",
+    "isbn": "6813527491862",
+    "price": "19.32"
+  },
+  {
+    "book_id": "8",
+    "title": "Legends of the Sapphire Isles",
+    "author": "Olivia Mitchell",
+    "published_date": "2017-05-14",
+    "isbn": "3169482053791",
+    "price": "84.57"
+  },
+  {
+    "book_id": "9",
+    "title": "Saga of the Crimson Crest",
+    "author": "Nathan Russell",
+    "published_date": "1982-07-01",
+    "isbn": "9265384170520",
+    "price": "60.84"
+  },
+  {
+    "book_id": "10",
+    "title": "Tales from the Azure Castle",
+    "author": "Lucy Powell",
+    "published_date": "1992-04-09",
+    "isbn": "3219458607326",
+    "price": "37.21"
+  }
+]

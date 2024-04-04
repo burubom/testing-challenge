@@ -1,0 +1,60 @@
+name: Run Unit Test
+on:
+  push:
+    branches:
+      - '*'
+    paths:
+      - 'Exercise1-API/book-store/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10.6
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10.6'
+
+      - name: Install Poetry
+        run: |
+          pip install poetry
+
+      - name: Install Dependencies
+        run: |
+          poetry install --no-interaction
+
+      - name: Run pytest
+        run: |
+          cd Exercise1-API/book-store
+          poetry run pytest --junitxml=../../results/pytest.xml --cov=api --cov-report=term-missing --cov-report=html
+        continue-on-error: true
+
+      - name: Upload Unit Test Results
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: Unit Test Results
+          path: results/*.xml
+
+      - name: Upload Coverage Report
+        uses: actions/upload-artifact@v3
+        if: success() || failure()
+        with:
+          name: Coverage Report
+          path: Exercise1-API/book-store/htmlcov
+
+      - name: Download Artifacts
+        if: success() || failure()
+        uses: actions/download-artifact@v3
+        with:
+          path: artifacts
+
+      - name: Publish Unit Test Results
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()
+        with:
+          files: artifacts/**/*.xml

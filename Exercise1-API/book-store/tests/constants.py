@@ -1,0 +1,8 @@
+CONTENT_TYPE_HEADER = 'Content-Type'
+JSON_MEDIA_TYPE = 'application/json'
+KEY_BOOK_ID = 'book_id'
+KEY_TITLE = 'title'
+KEY_AUTHOR = 'author'
+KEY_PUBLISHED_DATE = 'published_date'
+KEY_ISBN = 'isbn'
+KEY_PRICE = 'price'
