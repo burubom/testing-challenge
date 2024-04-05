@@ -1,6 +1,6 @@
 TIMEOUT = 200
 RETRIES = 3
-TARGET_URL = 'https://www.google.com/'
+TARGET_URL = 'https://es.idoven.ai/'
 BASE_URL = 'https://www.debugbear.com/test/website-speed'
 URL_INPUT_XPATH = '//*[@id="app"]/div/div[1]/form/div/input'
 START_BTN_XPATH = '//*[@id="app"]/div/div[1]/form/div/button'
